@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.9ooUkcA5GQ1cndUZA_6I0gHaHa?w=170&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+    <title>QuickHealth - Your Health Companion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>QuickHealth</h1>
+      <p class="tagline">
+        Your basic health companion (Not a replacement for medical advice)
+      </p>
+      <nav>
+        <a href="#symptom-checker">Symptom Checker</a>
+        <a href="#first-aid">First Aid</a>
+        <a href="#wellness-tips">Wellness Tips</a>
+        <a href="#bmi-calculator">BMI Calculator</a>
+        <a href="#health-news">Health News</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="symptom-checker">
+        <h2>Symptom Checker</h2>
+        <p>Type a common symptom to get a general suggestion:</p>
+        <input type="text" id="symptomInput" placeholder="e.g. headache" />
+        <button onclick="checkSymptom()">Check</button>
+        <p id="symptomResult"></p>
+      </section>
+
+      <section id="first-aid">
+        <h2>First Aid Guide</h2>
+        <ul>
+          <li>
+            <strong>Burns:</strong> Cool the burn under running water for 20
+            minutes.
+          </li>
+          <li>
+            <strong>Choking:</strong> Perform back blows and abdominal thrusts.
+          </li>
+          <li>
+            <strong>Bleeding:</strong> Apply pressure and elevate the wound.
+          </li>
+          <li>
+            <strong>CPR:</strong> 30 chest compressions, 2 breaths. Repeat.
+          </li>
+          <li>
+            <strong>Fractures:</strong> Immobilize the limb and apply a splint.
+            Seek medical help.
+          </li>
+          <li>
+            <strong>Poisoning:</strong> Do not induce vomiting. Call emergency
+            services immediately.
+          </li>
+          <li>
+            <strong>Heatstroke:</strong> Move to a cool place, apply cold packs,
+            and hydrate.
+          </li>
+          <li>
+            <strong>Hypothermia:</strong> Warm the person gradually and remove
+            wet clothing.
+          </li>
+          <li>
+            <strong>Allergic Reaction:</strong> Use an epinephrine auto-injector
+            if available. Seek emergency help.
+          </li>
+        </ul>
+      </section>
+
+      <section id="wellness-tips">
+        <h2>Daily Wellness Tips</h2>
+        <ul>
+          <li>Drink at least 8 glasses of water.</li>
+          <li>Sleep for 7-8 hours every night.</li>
+          <li>Exercise at least 30 minutes daily.</li>
+          <li>Take short breaks during work or study sessions.</li>
+          <li>Eat fruits and vegetables regularly.</li>
+        </ul>
+      </section>
+
+      <section id="bmi-calculator">
+        <h2>BMI Calculator</h2>
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" />
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" />
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p id="bmiResult"></p>
+      </section>
+
+      <section id="health-news">
+        <h2>Latest Health News</h2>
+        <ul id="newsList">
+          <li>Loading news...</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <strong>Disclaimer:</strong> This site does not provide medical advice.
+        Always consult a doctor.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
